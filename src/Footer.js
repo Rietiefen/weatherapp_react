@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer">
         <small id="repository">
           <a
-            href="https://github.com/Rietiefen/WeatherApp_rie2022"
+            href="https://github.com/Rietiefen/weatherapp_react"
             target="_blank"
           >
             Open-source code

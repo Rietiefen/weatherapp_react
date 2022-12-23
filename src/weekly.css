@@ -1,0 +1,21 @@
+.weeklyweather {
+  margin: 30px;
+}
+.weeklydetails {
+  padding: 0px;
+}
+.weather_emoji {
+  font-size: 50px;
+}
+.weeklyweather_frame {
+  color: #545b63;
+  padding: 0.5em 2em;
+  margin: 1em 0;
+  font-weight: bold;
+  background: rgba(254, 254, 254, 0.5);
+  border: solid 1px #bbe4e9;
+  border-radius: 10px;
+}
+.symbol {
+  font-size: 25px;
+}
