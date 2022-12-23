@@ -18,7 +18,7 @@ export default function Searchbox() {
               🔍
             </button>
           </form>
-          <button id="currentlocation">　Current　</button>
+          <button id="currentlocation"> Current </button>
         </div>
       </div>
     </div>
