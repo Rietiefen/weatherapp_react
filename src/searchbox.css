@@ -1,0 +1,32 @@
+.submitbutton {
+  background-color: orange;
+  border: orange;
+}
+.mx-sm-3 {
+  margin-right: 0px !important;
+}
+.form-inline {
+  margin-top: 10px;
+}
+.searchBar {
+  display: flex;
+  flex-direction: row;
+}
+.col-5 {
+  max-width: 100%;
+}
+#currentlocation {
+  background-color: #24a9e2;
+  border: #24a9e2;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  height: 37px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+#currentlocation：hover {
+  display: block;
+  background-color: blue;
+  color: black;
+}
