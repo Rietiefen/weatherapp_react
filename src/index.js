@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Searchbox from "./Searchbox";
 import Footer from "./Footer";
+import "bootstrap/dist/css/bootstrap.css";
 // import Weekly from "./Weekly";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
