@@ -1,40 +1,43 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import axios from "axios";
-import Searchbox from "./Searchbox";
+// import axios from "axios";
+// import Searchbox from "./Searchbox";
 
-export default function App() {
+export default function App(props) {
   return (
     <div className="App">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 main_city">
-            <span class="cityname">Tokyo, Japan</span>
-            <div class="col-5 dow_time lastUpdated">
-              Last Updated: <span class="cityDate">Monday</span>
+      <div className="container">
+        <div className="row">
+          <div className="col-4 main_city">
+            <span className="cityname">{props.data.city}</span>
+            <div className="col-5 dow_time lastUpdated">
+              Last Updated: <span className="cityDate">Monday</span>
             </div>
-            <div class="col-5 dow_time cityTime">13:30</div>
+            <div className="col-5 dow_time cityTime">13:30</div>
           </div>
 
-          <div class="col-3 main_weather">
+          <div className="col-3 main_weather">
             <img
               src="https://openweathermap.org/img/wn/01d@2x.png"
               alt="0"
               id="icon"
             />
-            <div class="temparature">
-              <span id="mainTemp">32</span> <span class="tempC">℃</span>
+            <div className="temparature">
+              <span id="mainTemp">{props.data.temperature}</span>{" "}
+              <span className="tempC">℃</span>
             </div>
           </div>
-          <div class="col-3 high_low_precipitaion">
+          <div className="col-3 high_low_precipitaion">
             <div>
-              <span class="red">↑</span> : <span class="highest_temp">33</span>℃
+              <span className="red">↑</span> :{" "}
+              <span className="highest_temp">33</span>℃
             </div>
             <div>
-              <span class="blue">↓</span> : <span class="lowest_temp">24</span>℃
+              <span className="blue">↓</span> :{" "}
+              <span className="lowest_temp">24</span>℃
             </div>
             <div>
-              🌬 : <span class="wind">15</span> km/h
+              🌬 : <span className="wind">{props.data.wind}</span> km/h
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <div class="borderline">
       <div class="container">
-        <Searchbox />
+        <Searchbox defaultCity="Tokyo" />
         {/* <App /> */}
         {/* <Weekly /> */}
         <Footer />

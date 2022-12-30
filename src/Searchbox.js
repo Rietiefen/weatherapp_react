@@ -3,8 +3,9 @@ import "./searchbox.css";
 import axios from "axios";
 import App from "./App";
 
-export default function Searchbox() {
+export default function Searchbox(props) {
   const [allWeatherData, setAllWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     setAllWeatherData({
@@ -15,7 +16,8 @@ export default function Searchbox() {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
-      description: response.data.weather[0].icon,
+      description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
     });
   }
 
