@@ -12,12 +12,14 @@ export default function Searchbox(props) {
       ready: true,
       city: response.data.name,
       coordinates: response.data.coord,
-      temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
+      temperature: Math.round(response.data.main.temp),
+      maxTemp: Math.round(response.data.main.temp_max),
+      minTemp: Math.round(response.data.main.temp_min),
     });
   }
 

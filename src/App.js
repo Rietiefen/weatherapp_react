@@ -30,11 +30,11 @@ export default function App(props) {
           <div className="col-3 high_low_precipitaion">
             <div>
               <span className="red">↑</span> :{" "}
-              <span className="highest_temp">33</span>℃
+              <span className="highest_temp">{props.data.maxTemp}</span>℃
             </div>
             <div>
               <span className="blue">↓</span> :{" "}
-              <span className="lowest_temp">24</span>℃
+              <span className="lowest_temp">{props.data.minTemp}</span>℃
             </div>
             <div>
               🌬 : <span className="wind">{props.data.wind}</span> km/h
