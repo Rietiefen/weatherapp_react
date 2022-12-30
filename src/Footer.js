@@ -12,7 +12,7 @@ export default function Footer() {
           >
             Open-source code
           </a>
-          <span>by Rie Tiefenbach</span>
+          <span> by Rie Tiefenbach</span>
         </small>
       </div>
       <script src="src/index.js"></script>
