@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Searchbox from "./Searchbox";
 import Footer from "./Footer";
@@ -14,7 +14,7 @@ root.render(
     <div class="borderline">
       <div class="container">
         <Searchbox />
-        <App />
+        {/* <App /> */}
         {/* <Weekly /> */}
         <Footer />
       </div>
