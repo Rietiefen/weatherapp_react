@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import DisplayDate from "./DisplayDate";
+// import Searchbox from "./Searchbox";
 // import axios from "axios";
 // import Searchbox from "./Searchbox";
 
@@ -11,9 +13,11 @@ export default function App(props) {
           <div className="col-4 main_city">
             <span className="cityname">{props.data.city}</span>
             <div className="col-5 dow_time lastUpdated">
-              Last Updated: <span className="cityDate">Monday</span>
+              Last Updated: <span className="cityDate"></span>
             </div>
-            <div className="col-5 dow_time cityTime">13:30</div>
+            <div className="col-5 dow_time cityTime">
+              <DisplayDate date={props.data.date} />
+            </div>
           </div>
 
           <div className="col-3 main_weather">
