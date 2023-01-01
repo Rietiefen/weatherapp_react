@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import DisplayDate from "./DisplayDate";
+import Temperature from "./Temperature";
 // import Searchbox from "./Searchbox";
 // import axios from "axios";
 // import Searchbox from "./Searchbox";
@@ -26,10 +27,8 @@ export default function App(props) {
               alt="0"
               id="icon"
             />
-            <div className="temparature">
-              <span id="mainTemp">{props.data.temperature}</span>{" "}
-              <span className="tempC">℃</span>
-            </div>
+            <Temperature celsius={props.data.temperature} />
+          
           </div>
           <div className="col-3 high_low_precipitaion">
             <div>
