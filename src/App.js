@@ -21,15 +21,10 @@ export default function App(props) {
               <DisplayDate date={props.data.date} />
             </div>
           </div>
-          <div className="float left">
+          <div className="col-2">
             <WeatherIcon code={props.data.icon} />
           </div>
           <div className="col-3 main_weather">
-            {/* <img
-              src="https://openweathermap.org/img/wn/01d@2x.png"
-              alt="0"
-              id="icon"
-            /> */}
             <Temperature celsius={props.data.temperature} />
           </div>
           <div className="col-3 high_low_precipitaion">
