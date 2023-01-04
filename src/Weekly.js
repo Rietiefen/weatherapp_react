@@ -1,18 +1,29 @@
 import React from "react";
 import "./weekly.css";
 import axios from "axios";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Weekly() {
+  function displayForecast(response) {
+    console.log(response.data);
+  }
+
+  let apiKey = "6782253072f7d90462731a624097fc54";
+  let longitude = 40.7;
+  let latitude = 74;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+
   return (
     <div className="WeatherForecast">
       <div className="row">
         <div className="col">
           <div className="WeatherFOrecastDay">Thu</div>
         </div>
-        {/* <Searchbox allWeatherData /> */}
+        <WeatherIcon code="01d" size={35} />
         <div className="WeatherTemperatures">
-          <div className="WeatherTemperatureMax">19</div>
-          <div className="WeatherTemperatureMin">10</div>
+          <span className="WeatherTemperatureMax">19°</span>
+          <span className="WeatherTemperatureMin">10°</span>
         </div>
       </div>
     </div>
