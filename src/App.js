@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import DisplayDate from "./DisplayDate";
 import Temperature from "./Temperature";
+import WeatherIcon from "./WeatherIcon";
 // import Searchbox from "./Searchbox";
 // import axios from "axios";
 // import Searchbox from "./Searchbox";
@@ -20,15 +21,16 @@ export default function App(props) {
               <DisplayDate date={props.data.date} />
             </div>
           </div>
-
+          <div className="float left">
+            <WeatherIcon code={props.data.icon} />
+          </div>
           <div className="col-3 main_weather">
-            <img
+            {/* <img
               src="https://openweathermap.org/img/wn/01d@2x.png"
               alt="0"
               id="icon"
-            />
+            /> */}
             <Temperature celsius={props.data.temperature} />
-          
           </div>
           <div className="col-3 high_low_precipitaion">
             <div>

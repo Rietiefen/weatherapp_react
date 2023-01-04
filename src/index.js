@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import Searchbox from "./Searchbox";
 import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.css";
-// import Weekly from "./Weekly";
+import Weekly from "./Weekly";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,7 +14,7 @@ root.render(
       <div class="container">
         <Searchbox defaultCity="Tokyo" />
 
-        {/* <Weekly /> */}
+        <Weekly />
         <Footer />
       </div>
     </div>
