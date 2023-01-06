@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./searchbox.css";
 import axios from "axios";
 import App from "./App";
+import Weekly from "./Weekly";
 
 export default function Searchbox(props) {
   const [allWeatherData, setAllWeatherData] = useState({ ready: false });
@@ -10,6 +11,7 @@ export default function Searchbox(props) {
   function handleResponse(response) {
     setAllWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       city: response.data.name,
       coordinates: response.data.coord,
       humidity: response.data.main.humidity,
@@ -68,6 +70,7 @@ export default function Searchbox(props) {
           </div>
         </div>
         <App data={allWeatherData} />
+        <Weekly coordinates={allWeatherData.coordinates} />
       </div>
     );
   } else {
