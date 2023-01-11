@@ -38,6 +38,7 @@ export default function Weekly(props) {
                 </div>
               );
             }
+            return null;
           })}
         </div>
       </div>

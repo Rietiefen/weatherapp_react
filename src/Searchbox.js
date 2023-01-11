@@ -13,7 +13,6 @@ export default function Searchbox(props) {
       ready: true,
       coordinates: response.data.coord,
       city: response.data.name,
-      coordinates: response.data.coord,
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
       date: new Date(response.data.dt * 1000),
