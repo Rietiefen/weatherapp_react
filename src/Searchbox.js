@@ -64,7 +64,7 @@ export default function Searchbox(props) {
                   🔍
                 </button>
               </form>
-              <button id="currentlocation"> Current </button>
+              {/* <button id="currentlocation"> Current </button> */}
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@
   padding-left: 30px;
   padding-right: 0px;
   color: #545b63;
+  font-size: 14px;
 }
 .cityname {
   font-size: 30px;
@@ -23,6 +24,7 @@
 }
 .main_weather {
   color: #545b63;
+  padding-top: 20px;
 }
 .high_low_precipitaion {
   color: #545b63;
@@ -47,4 +49,5 @@
 }
 .App .container {
   display: flex;
+  margin-top: 15px;
 }

@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div class="borderline">
-      <div class="container">
+      <div class="container-sm">
         <Searchbox defaultCity="Tokyo" />
         <Footer />
       </div>

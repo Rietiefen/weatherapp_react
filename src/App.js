@@ -3,9 +3,6 @@ import "./App.css";
 import DisplayDate from "./DisplayDate";
 import Temperature from "./Temperature";
 import WeatherIcon from "./WeatherIcon";
-// import Searchbox from "./Searchbox";
-// import axios from "axios";
-// import Searchbox from "./Searchbox";
 
 export default function App(props) {
   return (
@@ -15,7 +12,7 @@ export default function App(props) {
           <div className="col-4 main_city">
             <span className="cityname">{props.data.city}</span>
             <div className="col-5 dow_time lastUpdated">
-              Last Updated: <span className="cityDate"></span>
+              Updated: <span className="cityDate"></span>
             </div>
             <div className="col-5 dow_time cityTime">
               <DisplayDate date={props.data.date} />
