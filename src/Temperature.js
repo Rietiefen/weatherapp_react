@@ -20,16 +20,14 @@ export default function Temperature(props) {
         <span id="mainTemp">{Math.round(props.celsius)}</span>{" "}
         <span className="tempC">
           {" "}
-          <span className="temp">
-            <a href="/" onClick={showCelsius}>
-              ℃
-            </a>
-          </span>
+          <a href="/" onClick={showCelsius}>
+            ℃
+          </a>
         </span>{" "}
         |{" "}
         <span className="tempF">
           <a href="/" onClick={showFahrenheit}>
-            <span className="temp">°F</span>
+            °F
           </a>
         </span>
       </div>
