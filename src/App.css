@@ -35,9 +35,35 @@
   vertical-align: middle;
   padding-inline-start: 26px;
 }
+
+@media (min-width: 576px) {
+  .borderline {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .borderline {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .borderline {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .borderline {
+    max-width: 1200px;
+  }
+}
 .borderline {
+  padding-right: 15px;
+  padding-left: 15px;
   top: 20px;
-  width: 700px;
+  width: 100%;
   margin: auto;
   border: solid 3px #bbe4e9;
   border-radius: 20px;

@@ -29,19 +29,7 @@
   vertical-align: middle;
   padding-inline-start: 26px;
 }
-.borderline {
-  display: flex;
-  top: 20px;
-  width: 700px;
-  margin: auto;
-  border: solid 3px #bbe4e9;
-  border-radius: 20px;
-  background: linear-gradient(
-    181.2deg,
-    rgba(181, 239, 249, 0.7) 10.5%,
-    rgba(254, 254, 254, 0.7) 86.8%
-  );
-}
+
 .App .container {
   display: flex;
 }
