@@ -30,6 +30,7 @@
   padding-inline-start: 26px;
 }
 .borderline {
+  display: flex;
   top: 20px;
   width: 700px;
   margin: auto;
